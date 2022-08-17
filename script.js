@@ -16,15 +16,15 @@ function Status(bim) {
 }
 
 function calculate(){
-    let weight = document.getElementById('weight').value ;
-    let height = document.getElementById('height').value ;
+    let weight = document.getElementById("weight").value ;
+    let height = document.getElementById("height").value ;
 
     let bmi = BMI(weight,height);
 
-    let desc = Status (bim);
+    let desc = Status(bmi);
 
     let div = document.getElementById("result");
     
-    div.innerText = "bmi + " == " + desc"
+    div.innerText = bmi + " == " + desc
 
 }
